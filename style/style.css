@@ -27,7 +27,7 @@ nav {
     background-color: rgba(99,180,182, 1);
     /* background-color: transparent; */
     justify-content: space-between;
-    padding: 1rem;
+    padding: .6rem;
     position: fixed;
     width: 100%;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
@@ -377,7 +377,14 @@ nav {
      }
      .left-side{
          margin-bottom: 2rem;
+         text-align: center;
+         margin-right: 0;
      }
+     .left-title{
+        align-items: center;
+        justify-content: center;
+     }
+
      .img-gal{
         justify-content: center;
             grid-template-columns: repeat(4, 150px);
@@ -394,13 +401,96 @@ nav {
  }
 
 
+ @media screen and (max-width:878px){
+    h2.banner-title{
+        font-size: 4rem;
+    }
+    div.banner-con{
+        padding: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+ }
+
+
+ @media screen and (max-width:712px){
+    .home-title{
+        font-size: 3rem;
+    }
+ }
 
 
 
+ @media screen and (max-width:650px){
+    .img-gal{
+        justify-content: center;
+        
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(4, 375px); 
+        grid-template-areas: "a a"
+                             "b b"
+                             "c c"
+                             "e e"; 
+    }
+ }
 
 
+ @media screen and (max-width:625px){
+    .home-title{
+        font-size: 2.5rem;
+    }
+    .home-subtitle{
+        font-size: 1rem;
+    }
+ }
 
 
+ @media screen and (max-width:539px){
+    .home-title{
+        font-size: 2rem;
+    }
+    .home-subtitle{
+        font-size: .9rem;
+    }
+ }
+
+ @media screen and (max-width:534px){
+    h2.banner-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:460px){
+    div.left-side{
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+
+ @media screen and (max-width:453px){
+    .home-title{
+        font-size: 1.6rem;
+    }
+    .home-subtitle{
+        font-size: .5rem;
+    }
+ }
+
+ @media screen and (max-width:382px){
+    div.container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+ }
+
+
+ @media screen and (max-width:380px){
+    div.container-1{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+ }
 
 
 
@@ -638,8 +728,22 @@ nav {
     }
 }
 
+@media screen and (max-width: 371px){
+    .footer-header{
+        font-size: .95rem;
+    }
+}
 
 
+@media screen and (max-width: 329px){
+    .footer-header{
+        font-size: .85rem;
+        padding-top: .2rem;
+    }
+    .con-footer{
+        padding-right: 1.4rem;
+    }
+}
 
 
 
@@ -726,7 +830,7 @@ nav {
     color: #fff;
     word-spacing: 1px;
     padding-bottom: 1.6rem;
-    padding-right: 6rem;
+    padding-right: 3rem;
     letter-spacing: 1px;
 }
 
@@ -843,8 +947,104 @@ nav {
 
 
 
+@media screen and (max-width: 1256px ){
+    .about-text{
+        padding-right: 1rem;
+    }
+    .about-con{
+        width: 100%;
+    }
+    .construction-con{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1033px ){
+    .construction-con{
+        flex-direction: column;
+        align-items: center;
+    }
+    .construction-right{
+        width: 85%;
+    }
+    .con-details{
+        padding-right: 0;
+    }
+    .con-title{
+        justify-content: center;
+    }
+    .con-pics{
+        justify-content: center;
+    }
+}
 
 
+@media screen and (max-width: 1000px ){
+    .about-me img{
+        height: 350px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 750px ){
+    .about{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .about-me{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me img{
+        height: 250px;
+        width: auto;
+    }
+    .about-text{
+        padding-top: .3rem;
+    }
+}
+
+@media screen and (max-width: 490px ){
+    .con-pics{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pic-con{
+        width: 80%;
+        margin-bottom: .3rem;
+    }
+}
+
+
+@media screen and (max-width: 425px ){
+    .about{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+@media screen and (max-width: 375px ){
+    .about-text{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    p.con-details{
+        padding-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 331px ){
+    .wt-con :nth-child(7){
+        padding-top: 0rem;
+    }
+}
+
+@media screen and (max-width: 324px ){
+    .wt-con :nth-child(6){
+        padding-top: 0rem;
+    }
+}
 
 
 
@@ -887,22 +1087,110 @@ nav {
 
 .contact-sec{
     height: 100vh;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.contact-container{
+    background-color: rgba(99,180,182, 1);
+    padding: 2rem;
+    border-radius: 25px;
+    /* margin-top: 8rem; */
+    margin-bottom: 2rem;
+    width: 80%;
+    border-bottom: 5px solid #e6c497;
+    margin: auto;
+    box-shadow: 4px 8px 20px -10px rgba(0,0,0,0.75);
 }
 
 
 
+.c-title-con{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.con-title{
+    font-size: 2rem;
+    font-family: 'Slabo 27px', serif;
+    color: #fff;
+    padding-bottom: .8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.c-title-con img{
+    width: auto;
+    height: 40px;
+    margin-left: .5rem;
+}
 
 
+.store{
+    text-align: center;
+    padding-bottom: .3rem;
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1.2px;
+    
+}
+
+.store-color{
+    text-transform: uppercase;
+    color: #e6c497;
+}
+
+.c-info{
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.phone-email-con{
+    display: flex;
+    justify-content: space-around;
+}
 
 
+.pe-title{
+    padding-top: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
 
+.underline{
+    width: 52px;
+    height: 2px;
+    background-color: #e6c497;
+    margin: 0 auto;
+}
 
+.underline-1{
+    width: 58px;
+    height: 2px;
+    background-color: #e6c497;
+    margin: 0 auto;
+}
 
-
-
-
-
-
+.con-info{
+    padding-top: .5rem;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
 
 
 
