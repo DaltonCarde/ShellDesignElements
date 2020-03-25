@@ -92,7 +92,12 @@ nav {
 }
 
 
-
+@media screen and (max-width:479px){
+    .nav-links li{
+        padding-left: 0;
+        padding-right: 0.3rem;
+    }
+}
 
 
 
