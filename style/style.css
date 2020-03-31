@@ -11,7 +11,7 @@ html {
 
 body{
     background-color: rgb(236,225,222);
-    background-image:linear-gradient(180deg, rgba(236,225,222,1) 0%, rgba(236,225,222,.6) 100%), url('../img/background.jpg');
+    background-image:linear-gradient(180deg, rgba(236,225,222,1) 0%, rgba(236,225,222,.6) 100%), url('/img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1069,6 +1069,21 @@ div.img{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PRODUCT PAGE */
 .prod-sec{
    padding-top: 6rem; 
@@ -1086,6 +1101,20 @@ div.img{
     border-bottom: 5px solid #e6c497;
     box-shadow: 4px 8px 20px -10px rgba(0,0,0,0.75);
 }
+
+.whats-new-con{
+    padding-bottom: 2rem;
+}
+
+.wn-title{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 2px; 
+}
+
+
 
 .prod-title{
     text-align: center;
