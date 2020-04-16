@@ -11,7 +11,7 @@ html {
 
 body{
     background-color: rgb(236,225,222);
-    background-image:linear-gradient(180deg, rgba(236,225,222,1) 0%, rgba(236,225,222,.6) 100%), url('/img/background.jpg');
+    background-image:linear-gradient(180deg, rgba(236,225,222,1) 0%, rgba(236,225,222,.6) 100%), url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -781,14 +781,13 @@ div.img{
     flex-direction: column;
     padding: 6rem;
     justify-content: center;
-    padding-top: 8rem;
+    padding-top: 5rem;
 }
 
 .about-con{
     background-color: rgba(99,180,182, 1);
     padding: 2rem;
     border-radius: 25px;
-    margin-top: 8rem;
     margin-bottom: 2rem;
     width: 80%;
     border-bottom: 5px solid #e6c497;
@@ -1087,14 +1086,13 @@ div.img{
 /* PRODUCT PAGE */
 .prod-sec{
    padding-top: 6rem; 
-   padding-bottom: 4rem;
+   padding-bottom: 14rem;
 }
 
 
 .product-con{
-    height: 50vh;
     background-color: rgba(99,180,182, 1);
-    padding-top: 2rem;
+    padding: 2rem;
     border-radius: 25px;
     width: 85%;
     margin: auto;
@@ -1125,7 +1123,10 @@ div.img{
 }
 
 
-
+.pro-title-con{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -1151,17 +1152,18 @@ div.img{
     padding: 2rem;
     justify-content: center;
     padding-top: 6rem;
+    margin: auto;
 }
 
 .contact-container{
     background-color: rgba(99,180,182, 1);
     padding: 2rem;
     border-radius: 25px;
-    /* margin-top: 8rem; */
-    margin-bottom: 2rem;
     width: 80%;
     border-bottom: 5px solid #e6c497;
     margin: auto;
+    top: 10%;
+    position: relative;
     box-shadow: 4px 8px 20px -10px rgba(0,0,0,0.75);
 }
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Dancing+Script:500|Open+Sans+Condensed:300|Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/3e577b1d74.js" crossorigin="anonymous"></script>
     <title>Shell Design Elements</title>
 </head>
@@ -40,7 +41,7 @@
 
     <section id="welcome" class="welcome">
         <div class="container-1">
-            <div class="left-side">
+            <div class="left-side" data-aos="fade-right" data-aos-duration="1700" data-aos-once="true">
                 <div class="left-title">
                     <img src="img/starfish.svg" alt="">
                     <h2 class="welcome-title">Welcome to Shell Design Elements</h2>
@@ -53,22 +54,22 @@
                     stay... when I go, I take a part of it with me..." <span class="quote-k"> ~ Kristin</span></p>
             </div>
             <div class="right-side">
-                <h4 class="gal-quote">"Amazing quality & design, and great personalized and prompt service"<span
+                <h4 class="gal-quote" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">"Amazing quality & design, and great personalized and prompt service"<span
                         class="quote"> ~ Dave The Beach House</span></h4>
                 <div class="img-gal">
+                    <div class="img" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="100" data-aos-once="true"></div>
+                    <div class="img" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true"></div>
+                    <div class="img" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true"></div>
                     <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
+                    <div class="img" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-once="true"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <section class="middle-banner">
         <div class="banner-con">
-            <h2 class="banner-title">Authentic Handmade Creations</h2>
+            <h2 class="banner-title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> Authentic Handmade Creations</h2>
         </div>
     </section>
 
@@ -131,7 +132,10 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
